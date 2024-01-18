@@ -1,2 +1,13 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<div>
+  <hr>
+  {{#each messages}}
+  <p>{{this.user}}: {{this.text}} </p>
+  <p style="font-size: 10px ;">Date: {{this.added}} </p>
+  <hr>
+  {{/each}}
+
+  <a href="/new">Add a new message</a>
+</div>
